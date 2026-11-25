@@ -846,44 +846,111 @@ function App() {
                 id="frontiers"
                 aria-label="Aivaara's areas of exploration"
               >
-                <div className="frontier">
+                <div className="frontier-tier-label is-active">
+                  // ACTIVE ENGINEERING FOCUS
+                </div>
+                <div className="frontier is-active">
                   <small>01</small>
-                  <span>Artificial Intelligence</span>
+                  <div className="frontier-body">
+                    <div className="frontier-head">
+                      <span>Artificial Intelligence</span>
+                      <em className="frontier-badge is-active">
+                        ACTIVE · NAYORA / APPLIED SYSTEMS
+                      </em>
+                    </div>
+                    <p className="frontier-desc">
+                      Distributed AI orchestration, structured evaluation
+                      pipelines, and applied software tooling.
+                    </p>
+                  </div>
                   <i className="frontier-mark" aria-hidden="true">
-                    ◇
+                    ◆
                   </i>
                 </div>
-                <div className="frontier">
+                <div className="frontier is-active">
                   <small>02</small>
-                  <span>Cybersecurity</span>
+                  <div className="frontier-body">
+                    <div className="frontier-head">
+                      <span>Cybersecurity</span>
+                      <em className="frontier-badge is-active">
+                        ACTIVE · SENTINEL / LABS
+                      </em>
+                    </div>
+                    <p className="frontier-desc">
+                      Offensive and defensive security research, network
+                      telemetry, and hardened backend architecture.
+                    </p>
+                  </div>
                   <i className="frontier-mark" aria-hidden="true">
-                    ◇
+                    ◆
                   </i>
                 </div>
-                <div className="frontier">
+                <div className="frontier is-active">
                   <small>03</small>
-                  <span>Quantitative research and financial systems</span>
+                  <div className="frontier-body">
+                    <div className="frontier-head">
+                      <span>Systems engineering and infrastructure</span>
+                      <em className="frontier-badge is-active">
+                        CORE FOUNDATION · C++ / LINUX
+                      </em>
+                    </div>
+                    <p className="frontier-desc">
+                      Low-level systems architecture, high-concurrency backends,
+                      and isolated execution environments.
+                    </p>
+                  </div>
                   <i className="frontier-mark" aria-hidden="true">
-                    ◇
+                    ◆
                   </i>
                 </div>
-                <div className="frontier">
+
+                <div className="frontier-tier-label">
+                  // LONG-TERM RESEARCH HORIZONS
+                </div>
+                <div className="frontier is-horizon">
                   <small>04</small>
-                  <span>Healthcare technology</span>
+                  <div className="frontier-body">
+                    <div className="frontier-head">
+                      <span>Space computing and software</span>
+                      <em className="frontier-badge">R&amp;D · PROJECT ARES</em>
+                    </div>
+                    <p className="frontier-desc">
+                      Guidance, navigation, and control (GNC) software
+                      simulations for automated propulsive landing.
+                    </p>
+                  </div>
                   <i className="frontier-mark" aria-hidden="true">
                     ◇
                   </i>
                 </div>
-                <div className="frontier">
+                <div className="frontier is-horizon">
                   <small>05</small>
-                  <span>Space computing and software</span>
+                  <div className="frontier-body">
+                    <div className="frontier-head">
+                      <span>Quantitative research and financial systems</span>
+                      <em className="frontier-badge">HORIZON · MODELING</em>
+                    </div>
+                    <p className="frontier-desc">
+                      Mathematical modeling, statistical inference, and
+                      low-latency execution research.
+                    </p>
+                  </div>
                   <i className="frontier-mark" aria-hidden="true">
                     ◇
                   </i>
                 </div>
-                <div className="frontier">
+                <div className="frontier is-horizon">
                   <small>06</small>
-                  <span>Systems engineering and infrastructure</span>
+                  <div className="frontier-body">
+                    <div className="frontier-head">
+                      <span>Healthcare technology</span>
+                      <em className="frontier-badge">HORIZON · INTELLIGENCE</em>
+                    </div>
+                    <p className="frontier-desc">
+                      Data-driven diagnostic tooling and resilient clinical
+                      software systems.
+                    </p>
+                  </div>
                   <i className="frontier-mark" aria-hidden="true">
                     ◇
                   </i>

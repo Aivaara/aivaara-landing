@@ -2210,3 +2210,95 @@ h1 em {
     will-change: auto;
   }
 }
+
+/* Frontier tier hierarchy matching existing Aivaara dark/acid theme */
+.frontiers {
+  border-top: 0;
+}
+.frontier-tier-label {
+  font: 9px var(--mono);
+  letter-spacing: 0.14em;
+  color: #7f887e;
+  padding: 28px 0 12px;
+  border-bottom: 1px solid var(--line);
+}
+.frontier-tier-label:first-child {
+  padding-top: 4px;
+}
+.frontier-tier-label.is-active {
+  color: var(--acid);
+}
+.frontier {
+  align-items: start;
+  padding: 20px 0;
+}
+.frontier small {
+  padding-top: 3px;
+}
+.frontier-body {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  min-width: 0;
+}
+.frontier-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 12px;
+}
+.frontier-head span {
+  font-size: 14px;
+  color: var(--ink);
+  transition: color 0.4s ease;
+}
+.frontier:hover .frontier-head span {
+  color: var(--acid);
+}
+.frontier-badge {
+  font: 8px var(--mono);
+  font-style: normal;
+  letter-spacing: 0.11em;
+  padding: 3px 8px;
+  border: 1px solid var(--line);
+  color: #8b9489;
+  white-space: nowrap;
+}
+.frontier-badge.is-active {
+  border-color: rgba(212, 245, 106, 0.34);
+  background: rgba(212, 245, 106, 0.06);
+  color: var(--acid);
+}
+.frontier .frontier-desc {
+  margin: 0;
+  font-size: 12.5px;
+  line-height: 1.68;
+  color: var(--muted);
+  max-width: 560px;
+}
+.frontier.is-active .frontier-mark {
+  color: var(--acid);
+  opacity: 0.9;
+}
+.frontier.is-horizon {
+  opacity: 0.78;
+  transition:
+    opacity 0.4s ease,
+    padding 0.55s cubic-bezier(0.2, 0.8, 0.2, 1),
+    color 0.45s;
+}
+.frontier.is-horizon:hover {
+  opacity: 1;
+}
+@media (max-width: 650px) {
+  .frontier-head span {
+    font-size: 13px;
+  }
+  .frontier-badge {
+    font-size: 7.5px;
+    padding: 2px 6px;
+  }
+  .frontier .frontier-desc {
+    font-size: 12px;
+  }
+}
